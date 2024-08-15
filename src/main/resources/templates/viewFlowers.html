@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: gold;">
+<table style="border: 2px solid red">
+    <tr th:each="showflowers: ${flowersVariable}">
+        <td th:text="${showflowers}"></td>
+    </tr>
+</table>
+
+<table style="border: 1px solid black">
+    <tr th:each="showCity: ${CityVariable}">
+        <td th:text="${showCity}" />
+    </tr>
+</table>
+
+</body>
+</html>
